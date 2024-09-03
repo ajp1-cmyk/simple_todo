@@ -1,0 +1,97 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the todo list */
+.todo-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;          /* Make the container take up 90% of the screen width */
+    height: 90vh;        /* Make the container take up 90% of the viewport height */
+    max-width: 800px;    /* Limit the maximum width to 800px for readability */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header for the todo list */
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;     /* Increase the font size for better visibility */
+    color: #333;
+}
+
+/* Input field styling */
+#text-input {
+    width: 100%;         /* Make the input field take the full width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Add button styling */
+.addBtn {
+    width: 100%;         /* Make the button take the full width */
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.addBtn:hover {
+    background-color: #218838;
+}
+
+/* List items */
+ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;       /* Allow the list to grow and take available space */
+    overflow-y: auto;   /* Add vertical scroll if the list grows too long */
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Remove button styling */
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
